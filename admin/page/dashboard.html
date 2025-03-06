@@ -1,0 +1,68 @@
+
+    <!-- ---bootstrap--- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <?php 
+        $order_delivered = connect("SELECT order_sold.order_id, order_status.delivered FROM order_sold INNER JOIN order_status ON order_sold.order_id = order_status.order_id where order_status.delivered != '' ");
+        $revenue =0 ;
+        foreach($order_delivered as $index => $item){
+            $id = $item['order_id'];
+            $order_item = connect("SELECT * FROM sold_item WHERE order_id = '$id'");
+            $orderItem_price =0;
+            foreach($order_item as $index => $item){
+                // print_r($price['price']);
+                $orderItem_price += $item['price']*$item['qty'];
+            }
+                $revenue += $orderItem_price;
+            
+        } ?>
+<div class="general-stat">
+    <div class="statistical col-3">
+        <div class="icon-stat1"><i class="fa-solid fa-coins"></i></div>
+        <div class="h1-stat">
+            <h1><?php echo $revenue; ?> đ</h1>
+        </div> 
+        <div class="p-stat">Doanh Thu</div>
+
+    </div>
+    <div class="statistical col-3">
+        <div class="icon-stat2"><i class="fa-solid fa-layer-group"></i></i></div>
+        <div class="h1-stat">
+            <h1><?php echo count($product_list); ?></h1>
+        </div>
+        <div class="p-stat">Mặt Hàng</div>
+    </div>
+    <div class="statistical col-3">
+        <div class="icon-stat3"><i class="fa-solid fa-user-group"></i></div>
+        <div class="h1-stat">
+            <h1><?php echo count(connect("SELECT * from user")); ?></h1>
+        </div>
+        <div class="p-stat">Đã Đăng Ký</div>
+    </div>
+</div>
+
+<div class="order-stat">
+    <div class="row justify-content-between">
+        <div class="typeOf-user_stat col-4 stat-canvas">
+            <div class="stat-text">
+                <div class="stat-name">Lượt mua</div>
+                <div class="stat-orderBy">Tuần này <i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="stat-detail d-flex  justify-content-between align-items-center">
+                <div class="chart">
+                    <div id="l-pie">
+                    </div>
+                    <div id="s-pie"></div>
+                </div>  
+                <div class="chart-explain">
+                    <div>Phân loại ng dùng</div>
+                    <p style="color: #3A57E8;"><i class="fa-solid fa-circle"></i> đã đăng ký</p>
+                    <p style="color: cyan;"><i class="fa-solid fa-circle"></i> chưa đăng ký</p>
+                </div>
+            </div>
+        </div>
+        <div class="revenue-chart col-8 stat-canvas" >
+            <canvas id="revenueChart" height="110px"></canvas>
+        </div>
+    </div>
+</div>

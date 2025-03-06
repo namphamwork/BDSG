@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: RobotoCondensed-Bold;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-BoldItalic;
+  src: url(font/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-Italic;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Italic.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-Light;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Light.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-LightItalic;
+  src: url(font/Roboto_Condensed/RobotoCondensed-LightItalic.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-Regular;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+/* main */
+.h1-blog {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-family: RobotoCondensed-Bold;
+  visibility: hidden;
+}
+.blogrow-blog {
+  display: flex;
+  margin-top: 30px;
+}
+.blogrow-blog .bn-blog {
+  margin-top: 30px;
+}
+.blofcolleft-blog {
+  width: 65%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.blog-xuhuong {
+  display: flex;
+}
+.trend {
+  border: 1px solid gray;
+  margin-right: 10px;
+}
+.trend a {
+  font-family: RobotoCondensed-Bold;
+  color: black;
+  padding: 8px 16px;
+  display: block;
+}
+.trend a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.discover {
+  border: 1px solid gray;
+}
+.discover a {
+  font-family: RobotoCondensed-Bold;
+  color: black;
+  padding: 8px 16px;
+  display: block;
+}
+.discover a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.h1-blog-detail {
+  margin-top: 20px;
+  font-family: RobotoCondensed-Bold;
+}
+.h1-blog-detail h1 {
+  font-size: 30px;
+}
+.day-blog-detail {
+  color: gray;
+  font-family: RobotoCondensed-Regular;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(182, 177, 177);
+  padding-bottom: 35px;
+}
+.img-blog-detail {
+  margin-top: 30px;
+}
+.img-blog-detail img {
+  width: 100%;
+}
+.p-blog-detail {
+  margin-top: 30px;
+  font-family: RobotoCondensed-Regular;
+  line-height: 30px;
+  font-size: 18px;
+}
+.p1-blog-detail {
+  font-family: RobotoCondensed-Bold;
+  margin-top: 20px;
+}
+.i-blog-detail .firt-child-blog {
+  font-family: RobotoCondensed-Italic;
+  font-size: 20px;
+  line-height: 30px;
+  width: 90%;
+  margin: 20px 0px 0 35px;
+  display: inline-block;
+}
+.i-blog-detail .last-child-blog {
+  font-family: RobotoCondensed-Regular;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.blofcolright-blog {
+  margin-right: 30px;
+  width: 35%;
+}
+.blofcolright-blog h3 {
+  margin: 0;
+}
+.blofcolright-blog .span-blog {
+  margin: 30px 0 30px 0;
+}
+.blofcolright-blog .span-blog span {
+  display: inline-block;
+  padding: 15px 12px 15px 0;
+}
+.blofcolright-blog .span-blog a {
+  border: 1px solid gray;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-family: RobotoCondensed-Bold;
+}
+.blofcolright-blog .span-blog a:hover {
+  background-color: black;
+  color: white;
+}
+.product-new-blog {
+  margin: 30px 0 30px 0;
+}
+.flex-cha-blog {
+  position: relative;
+}
+.flex-blog {
+  margin-top: 30px;
+  display: flex;
+}
+.flex-blog img {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.flex-blog p {
+  font-size: 20px;
+  font-family: RobotoCondensed-Bold;
+}
+.day-blog {
+  position: absolute;
+  bottom: -4px;
+  left: 124px;
+  color: gray;
+}
+
+/* commen */
+.commen-blog {
+  margin-top: 30px;
+  font-family: RobotoCondensed-Regular;
+  font-size: 25px;
+  font-family: RobotoCondensed-Bold;
+}
+.input-blog-detail input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  outline: none;
+  margin-top: 10px;
+}
+.input-blog-detail input::placeholder {
+  font-family: RobotoCondensed-Italic;
+}
+.input-coment-blog {
+  position: relative;
+}
+.send-blog-deltail a {
+  position: absolute;
+  top: 35%;
+  right: 20px;
+  padding: 0px;
+  text-align: center;
+
+  text-decoration: none;
+  color: gray;
+}
+.send-blog-deltail a:hover {
+  text-decoration: none;
+}
+.coment-new-blog-detail {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: RobotoCondensed-Bold;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10 px;
+}
+.your-picture {
+  background-color: aqua;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-family: RobotoCondensed-Bold;
+}
+/* your comment */
+.yourcommen-blog {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-top: 20px;
+}
+.your-comment {
+  margin-left: 10px;
+}
+.comment {
+  display: flex;
+}
+.like-blog-detail {
+  margin-left: 70px;
+}
+.like-blog-detail a {
+  color: rgb(118, 140, 182);
+  margin-left: 5px;
+}
+.like-blog-detail1 i {
+  background-color: rgb(76, 11, 255);
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 60%;
+  color: rgb(255, 255, 255);
+  margin-left: 30px;
+}
+.like-blog-detail1 a {
+  color: rgb(221, 136, 136);
+  margin-left: 5px;
+}
+.date-submit-blog {
+  margin-left: 20px;
+  color: gray;
+}
+/* footer */
+footer {
+  background-color: rgb(193, 186, 202);
+}
+.footer {
+  display: flex;
+  margin-top: 50px;
+}
+.fterlast1,
+.fterlast2,
+.fterlast3,
+.fterlast4 {
+  margin-top: 50px;
+  width: 25%;
+}
+.fterlast1 {
+  margin-left: 50px;
+}
+.fterlast2 {
+  margin-left: 30px;
+}
+.fterlast4 {
+  margin-right: 50px;
+}
+.las {
+  font-family: RobotoCondensed-Bold;
+  margin: 20px 0;
+}
+
+.las1 {
+  margin-top: 25px;
+  font-size: 15px;
+  font-family: RobotoCondensed-Regular;
+}
+.menu a {
+  text-decoration: none;
+  margin-left: 5px;
+  color: black;
+  font-family: RobotoCondensed-Regular;
+  font-size: 15px;
+}
+.menu a:hover {
+  text-decoration: underline;
+  color: rgb(158, 23, 23);
+  transition: 0.3s ease;
+}
+.menu div {
+  margin-top: 15px;
+}
+.loco {
+  font-family: RobotoCondensed-Bold;
+  margin: 10px 0;
+}
+.lass {
+  font-family: RobotoCondensed-Regular;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.bdsg {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+.messenger {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+.messenger img {
+  border-radius: 400px;
+  text-align: center;
+}
+
+.backgroud {
+  border-radius: 5px;
+}

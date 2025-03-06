@@ -1,0 +1,17 @@
+
+
+<ul class="nav nav-tabs" >
+  <li class="nav-item" onclick="openTab('pending')">
+    <a class="nav-link active" href="#">Đang xử lý</a>
+  </li>
+  <li class="nav-item" onclick="openTab('done')"> 
+    <a class="nav-link" href="#">Đã hoàn thành</a>
+  </li>
+  <li class="nav-item" onclick="openTab('cancel')"> 
+    <a class="nav-link" href="#">Đã hủy</a>
+  </li>
+</ul>
+
+<div class="tab-show">
+    <?php order_list(); ?>
+</div>

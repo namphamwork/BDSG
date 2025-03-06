@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: RobotoCondensed-Bold;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-BoldItalic;
+  src: url(font/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-Italic;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Italic.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-Light;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Light.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-LightItalic;
+  src: url(font/Roboto_Condensed/RobotoCondensed-LightItalic.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-Regular;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+.menu-index {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.menu-index ul {
+  display: flex;
+  align-items: center;
+}
+.menu-index ul li {
+  list-style-type: none;
+  padding: 16px 18px;
+}
+
+.menu-index ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: RobotoCondensed-Bold;
+}
+.menu-index li:nth-child(1) {
+  margin-right: 50px;
+}
+
+.menu-index li:last-child a {
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.container-check {
+  width: 100%;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.container-check .form-dk-check {
+  width: 650px;
+  /* margin-left: 180px; */
+}
+.container-check .form-dk-check p {
+  border-top: 3px solid green;
+  font-size: 14px;
+  padding: 12px 0;
+  padding-left: 20px;
+  background-color: gainsboro;
+}
+.container-check .h2-check {
+  margin-top: 20px;
+  font-family: RobotoCondensed-Bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(221, 215, 215);
+  margin-bottom: 30px;
+}
+.container-check .form-dk-check label {
+  font-family: RobotoCondensed-Light;
+}
+.p-check {
+  margin: 20px 0;
+}
+.id4-check {
+  display: flex;
+}
+.id7-check {
+  margin-top: 20px;
+}
+.email-check {
+  width: 50%;
+  padding: 0 20px 0 0;
+}
+.sdt-check {
+  width: 50%;
+  padding: 0 0 0 10px;
+}
+/* span {
+  color: red;
+} */
+.spam-check {
+  font-family: RobotoCondensed-Light;
+}
+.container-check .ip-check {
+  width: 100%;
+  height: 35px;
+  outline: none;
+  padding: 0 5px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(148, 145, 143);
+}
+.container-check .form-dk-check label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+textarea {
+  width: 100%;
+  outline: none;
+  padding: 7px;
+}
+
+.hoadon-check {
+  background-color: gainsboro;
+  width: 300px;
+  /* height: 650px; */
+  margin-left: 50px;
+}
+.hd-check {
+  margin: 20px 20px 0 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: RobotoCondensed-Bold;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+.text-1-check {
+  margin: 30px 20px 0 20px;
+  display: flex;
+  font-family: RobotoCondensed-Bold;
+}
+.text-1-check .tt-check {
+  flex-grow: 1;
+  text-align: right;
+}
+.text-2-check {
+  margin: 20px 20px 0 20px;
+  display: flex;
+}
+.text-2-check .sp-check {
+  font-family: RobotoCondensed-Light;
+  font-size: 15px;
+}
+.text-2-check .tt-check {
+  flex-grow: 1;
+  text-align: right;
+  font-family: RobotoCondensed-Light;
+}
+.x2-check {
+  margin: 7px 20px 0 20px;
+  font-family: RobotoCondensed-Light;
+}
+.x1-check {
+  margin: 7px 20px 0 20px;
+  font-family: RobotoCondensed-Light;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+
+.text-3-check {
+  margin: 25px 20px 0 20px;
+  display: flex;
+}
+.text-3-check .sp-check {
+  font-family: RobotoCondensed-Light;
+  font-size: 15px;
+}
+.text-3-check .tt-check {
+  flex-grow: 1;
+  text-align: right;
+  font-family: RobotoCondensed-Light;
+}
+
+.text-4-check {
+  margin: 25px 20px 0 20px;
+  display: flex;
+}
+.text-4-check .sp-check {
+  font-family: RobotoCondensed-Light;
+  font-size: 15px;
+  font-family: RobotoCondensed-Bold;
+}
+.text-4-check .tt-check {
+  flex-grow: 1;
+  text-align: right;
+  color: red;
+  font-family: RobotoCondensed-Light;
+}
+
+.text-5-check {
+  margin: 25px 20px 0 20px;
+  display: flex;
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+}
+.text-5-check .sp-check {
+  font-family: RobotoCondensed-Bold;
+  font-size: 15px;
+}
+.text-5-check .tt-check {
+  flex-grow: 1;
+  text-align: right;
+  color: red;
+  font-family: RobotoCondensed-Light;
+}
+
+.chek-check {
+  margin: 25px 20px 0 20px;
+  font-family: RobotoCondensed-Light;
+}
+.chek-check .chek1-check {
+  margin-bottom: 10px;
+  font-family: RobotoCondensed-Light;
+}
+/* .a {
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  border: 1px solid black;
+  width: 260px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-family: RobotoCondensed-Bold;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+} */
+.a-check {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: RobotoCondensed-Bold;
+  width: 260px;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.a-check:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+/* footer */
+footer {
+  background-color: rgb(193, 186, 202);
+}
+.footer {
+  display: flex;
+  margin-top: 50px;
+}
+.fterlast1,
+.fterlast2,
+.fterlast3,
+.fterlast4 {
+  margin-top: 50px;
+  width: 25%;
+}
+.fterlast1 {
+  margin-left: 50px;
+}
+.fterlast2 {
+  margin-left: 30px;
+}
+.fterlast4 {
+  margin-right: 50px;
+}
+.las {
+  font-family: RobotoCondensed-Bold;
+  margin: 20px 0;
+}
+
+.las1 {
+  margin-top: 25px;
+  font-size: 15px;
+  font-family: RobotoCondensed-Regular;
+}
+.menu1 a {
+  text-decoration: none;
+  margin-left: 5px;
+  color: black;
+  font-family: RobotoCondensed-Regular;
+  font-size: 15px;
+}
+.menu1 a:hover {
+  text-decoration: underline;
+  color: rgb(158, 23, 23);
+  transition: 0.3s ease;
+}
+.menu1 div {
+  margin-top: 15px;
+}
+.loco {
+  font-family: RobotoCondensed-Bold;
+  margin: 10px 0;
+}
+.lass {
+  font-family: RobotoCondensed-Regular;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.bdsg {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+.messenger {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+.messenger img {
+  border-radius: 400px;
+  text-align: center;
+}

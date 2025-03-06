@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.active {
+  background-color: black !important;
+  color: white !important;
+}
+@font-face {
+  font-family: RobotoCondensed-Bold;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-BoldItalic;
+  src: url(font/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-Italic;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Italic.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-Light;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Light.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-LightItalic;
+  src: url(font/Roboto_Condensed/RobotoCondensed-LightItalic.ttf);
+}
+@font-face {
+  font-family: RobotoCondensed-Regular;
+  src: url(font/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+.menu-index {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.menu-index ul {
+  display: flex;
+  align-items: center;
+}
+.menu-index ul li {
+  list-style-type: none;
+  padding: 16px 18px;
+}
+
+.menu-index ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: RobotoCondensed-Bold;
+}
+.menu-index li:nth-child(1) {
+  margin-right: 50px;
+}
+
+.menu-index li:last-child a {
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+/* main */
+/* .container {
+  margin-top: 150px;
+} */
+.product {
+  margin-top: 80px;
+  margin-left: 50px;
+  display: flex;
+}
+.product button {
+  display: block;
+}
+
+.product .con1 button {
+  border: none;
+  margin-bottom: 10px;
+}
+.product .con1 img {
+  line-height: 10px;
+}
+.product .con2 img {
+  width: 478px;
+  height: 680px;
+  line-height: 0;
+}
+
+.product .con1 {
+  margin-right: 20px;
+}
+
+/* main product1 */
+.container-chitiet {
+  display: flex;
+  margin-top: 20px;
+}
+
+.product1 {
+  margin-left: 50px;
+  margin-top: 100px;
+}
+.product1 .sanpham {
+  color: rgb(39, 38, 38);
+  font-family: RobotoCondensed-bold;
+  font-size: 20px;
+  word-spacing: 2px;
+  margin-bottom: 40px;
+}
+.product1 .gia {
+  margin-top: 40px;
+  font-family: RobotoCondensed-bold;
+  font-size: 25px;
+}
+.discount {
+  font-family: RobotoCondensed-Regular;
+  margin-left: 10px;
+  margin-top: 50px;
+  text-decoration: line-through black;
+  color: darkgrey;
+  font-size: 19px;
+}
+.p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.size {
+  margin-top: 5px;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid gainsboro;
+}
+
+.id5 {
+  margin-left: 100px;
+}
+.quannity {
+  border: 1px solid rgb(156, 154, 154);
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+.quannity .id1 {
+  margin-left: 10px;
+  margin-right: 25px;
+  font-family: RobotoCondensed-Bold;
+  width: 10px;
+  font-size: 20px;
+}
+.quannity .id2 {
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: RobotoCondensed-Bold;
+}
+.mua {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.mua .id3 {
+  padding-left: 10px;
+}
+.mua .id4 {
+  padding-left: 10px;
+}
+.mua a {
+  text-decoration: none;
+  background-color: black;
+  padding: 12px 60px;
+  color: white;
+  font-family: RobotoCondensed-Bold;
+  border-radius: 10px;
+}
+.icon8 {
+  margin-top: 55px;
+}
+/* prodiclass */
+.h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-family: RobotoCondensed-Light;
+  font-size: 23px;
+  font-weight: bolder;
+  color: rgb(190, 41, 41);
+}
+
+/* footer */
+footer {
+  background-color: rgb(193, 186, 202);
+}
+.footer {
+  display: flex;
+  margin-top: 50px;
+}
+.fterlast1,
+.fterlast2,
+.fterlast3,
+.fterlast4 {
+  margin-top: 50px;
+  width: 25%;
+}
+.fterlast1 {
+  margin-left: 50px;
+}
+.fterlast2 {
+  margin-left: 30px;
+}
+.fterlast4 {
+  margin-right: 50px;
+}
+.las {
+  font-family: RobotoCondensed-Bold;
+  margin: 20px 0;
+}
+
+.las1 {
+  margin-top: 25px;
+  font-size: 15px;
+  font-family: RobotoCondensed-Regular;
+}
+.menu a {
+  text-decoration: none;
+  margin-left: 5px;
+  color: black;
+  font-family: RobotoCondensed-Regular;
+  font-size: 15px;
+}
+.menu a:hover {
+  text-decoration: underline;
+  color: rgb(158, 23, 23);
+  transition: 0.3s ease;
+}
+.menu div {
+  margin-top: 15px;
+}
+.loco {
+  font-family: RobotoCondensed-Bold;
+  margin: 10px 0;
+}
+.lass {
+  font-family: RobotoCondensed-Regular;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.bdsg {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+.messenger {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+.messenger img {
+  border-radius: 400px;
+  text-align: center;
+}
+
+.noibat {
+  display: flex;
+  margin-top: 50px;
+}
+.sp1,
+.sp2,
+.sp3,
+.sp4 {
+  margin: auto;
+}
+.sp1 {
+  margin-left: 50px;
+}
+.sp4 {
+  margin-right: 20px;
+}
+.sp1 p,
+.sp2 p,
+.sp3 p,
+.sp4 p {
+  margin-top: 15px;
+  font-family: RobotoCondensed-Bold;
+}
+.sp1 button,
+.sp2 button,
+.sp3 button,
+.sp4 button {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: white;
+  border: none;
+}
